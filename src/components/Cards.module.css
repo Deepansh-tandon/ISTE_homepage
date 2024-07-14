@@ -1,13 +1,71 @@
+.container{
+    height: 200vh;
+    width: 100vw;
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    margin:2rem;
+}
 
+.events {
+  position: relative;
+  height: 46rem;
+  width: 40rem;
+  background-color: #d8ecf8;
+  border: 1px solid black;
+  border-radius: 10px;
+  /* padding: 112px 64px; */
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
 
-.events{
+.bottomcards {
+  position: relative;
+  width: 42.5rem;
+  height: 21.25rem;
+  display: inline-flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+.bottomcards .team {
+  width: 19rem;
+  height: 21.25rem;
+  background-color: #d8ecf8;
+  border-radius: 0.625rem;
+  border: 1px solid #000;
+  background-color: #d8ecf8;
+}
+
+.bottomcards .alumni {
+  width: 19rem;
+  height: 21.25rem;
+  background-color: #d8ecf8;
+  border-radius: 0.625rem;
+  border: 1px solid #000;
+}
+
+.about {
+position:relative;
+  width: 40rem;
+  height: 21.25rem;
+  border-radius: 0.625rem;
+  border: 1px solid black;
+  background-color: #d8ecf8;
+  margin-right: 4rem;
+  margin-top: 4rem;
+}
+
+.pastprojects{
     position: relative;
-    height: 736px;
-    width: 640px;
-    background-color: #D8ECF8;
-    border: 1px solid black; 
+    height: 46rem;
+    width: 40rem;
+    background-color: #d8ecf8;
+    border: 1px solid black;
     border-radius: 10px;
     /* padding: 112px 64px; */
-    margin: 112px 64px;
-   
-}
+    margin-top: 2rem;
+    margin-right: 4rem;
+  }
+
