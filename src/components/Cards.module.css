@@ -1,0 +1,13 @@
+
+
+.events{
+    position: relative;
+    height: 736px;
+    width: 640px;
+    background-color: #D8ECF8;
+    border: 1px solid black; 
+    border-radius: 10px;
+    /* padding: 112px 64px; */
+    margin: 112px 64px;
+   
+}
