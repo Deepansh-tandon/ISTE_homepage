@@ -1,10 +1,25 @@
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(Roboto-Bold.ttf);
+}
+
 .container{
     height: 200vh;
     width: 100vw;
-    /* background-color: red; */
-    width: 100%;
+    /* background-color: #05060f; */
     display: flex;
-    margin:2rem;
+    overflow-x: hidden;
+    padding: 2rem 2rem;
+    object-fit: cover;
+
+}
+
+.column1{
+  margin-top: 8rem;
+}
+
+.column2{
+  margin-top: 8rem;
 }
 
 .events {
@@ -14,9 +29,56 @@
   background-color: #d8ecf8;
   border: 1px solid black;
   border-radius: 10px;
-  /* padding: 112px 64px; */
   margin-top: 4rem;
   margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  transition-duration: 3;
+  transition-delay: 0.5;
+}
+
+.eventstext{
+  width: 100%;
+  height: 50%;
+
+}
+
+.eventstext h3{
+  position: relative;
+  font-size: 1rem;
+  padding-top: 10.5%;
+  padding-left: 7.5%;
+}
+
+.eventstext h2{
+  position: relative;
+  font-size: 40px;
+  padding-left: 7.5%;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  font-family: Roboto-Bold;
+}
+
+.events p{
+  position: relative;
+  padding-left: 7.5%;
+  margin-right: 4.5em;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  overflow: hidden;
+
+}
+
+
+.eventsimg{
+  width: 100%;
+  height: 50%;
+  background-image: url("https://images.unsplash.com/photo-1721108450650-65940bc73e1a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8eEh4WVRNSExnT2N8fGVufDB8fHx8fA%3D%3D");
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .bottomcards {
@@ -29,13 +91,52 @@
   margin-left: 4rem;
 }
 
+
 .bottomcards .team {
   width: 19rem;
   height: 21.25rem;
   background-color: #d8ecf8;
   border-radius: 0.625rem;
   border: 1px solid #000;
-  background-color: #d8ecf8;
+  padding: 1.5rem; 
+  transition:all 0.5s ease-in-out;
+  transition-duration: 3;
+  transition-delay: 0.5;
+}
+
+.icon{
+  position: relative;
+  width: 2.25rem ;
+  height: 2.5rem ;
+  scale: 2.5;
+  margin-top: 1.75rem;
+  margin-left: 1.875rem;
+  object-fit: cover;
+}
+
+.team h1{
+  position: relative;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  font-family: Roboto-Bold;
+  text-transform: uppercase;
+}
+.team p{
+  height: 125px;
+  width: 250px;
+  position: relative;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  overflow: hidden;
+}
+
+.buttoncontainer button{
+  margin-top: 1.5rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
 }
 
 .bottomcards .alumni {
@@ -44,10 +145,35 @@
   background-color: #d8ecf8;
   border-radius: 0.625rem;
   border: 1px solid #000;
+  padding: 1.5rem;
+  transition: all 0.5s ease-in-out;
+  transition-duration: 3;
+  transition-delay: 0.5;
 }
 
+.alumni h1{
+position: relative;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  font-family: Roboto-Bold;
+  text-transform: uppercase;
+}
+
+.alumni p{
+  height: 125px;
+  width: 250px;
+  position: relative;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  overflow: hidden;
+}
+
+
 .about {
-position:relative;
+  position:relative;
   width: 40rem;
   height: 21.25rem;
   border-radius: 0.625rem;
@@ -55,17 +181,128 @@ position:relative;
   background-color: #d8ecf8;
   margin-right: 4rem;
   margin-top: 4rem;
+  display: flex;
+  transition: all 0.5s ease-in-out;
+  /* transition-duration: 3;
+  transition-delay: 0.5; */
+}
+
+
+.image{
+  width: 50%;
+  height: 100%;
+}
+.image img{
+  object-fit:cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.textcontainer {
+  position: relative;
+  width: 50%;
+  /* background-color: red; */
+  height: 100%;
+}
+
+.textcontainer h3{
+  position: relative;
+  font-size: 1rem;  
+  padding-top: 10.5%;
+  padding-left: 7.5%;
+}
+
+.textcontainer h2{
+  position: relative;
+  padding-left: 7.5%;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  font-family: Roboto-Bold;
+}
+
+.textcontainer p{
+line-height: 1.5rem;
+margin-top: 0.5rem;
+padding-left: 7.5%;
+margin-right: 2rem;
+}
+
+.buttoncontainer2 button{
+  padding-left: 7.5%;
+  position: relative;
+  margin-top: 1.5rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
 }
 
 .pastprojects{
-    position: relative;
+  position: relative;
     height: 46rem;
     width: 40rem;
     background-color: #d8ecf8;
     border: 1px solid black;
-    border-radius: 10px;
-    /* padding: 112px 64px; */
+    border-radius: 0.625rem;
     margin-top: 2rem;
     margin-right: 4rem;
+    transition: all 0.5s ease-in-out;
+    transition-duration: 3;
+    transition-delay: 0.5;
   }
 
+.pastprojectstext{
+  position: relative;
+  padding-top: 10.5%;
+  padding-left: 7.5%;
+  height: 50%;
+}
+
+.pastprojects h2{
+  position: relative;
+    font-size: 40px;
+    margin-top: 0.5rem ;
+    font-family: Roboto-Bold;
+    text-transform: uppercase;
+  }
+
+.pastprojects p{
+  line-height: 1.5rem;
+margin-top: 1rem;
+margin-right: 5rem;
+}
+
+.pastprojectsimg{
+  height: 50%;
+  overflow: hidden;
+  background-image: url("https://plus.unsplash.com/premium_vector-1720539524673-d92971c00b2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpbGx1c3RyYXRpb25zLWZlZWR8OHx8fGVufDB8fHx8fA%3D%3D");
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;  
+}
+
+.events:hover{
+  transition: ease-out ;
+  transform: scale(1.1);
+}
+
+.about:hover{
+  transition: ease-out ;
+  transform: scale(1.1);
+}
+
+.team:hover{
+  transition: ease-out ;
+  transform: scale(1.1);
+}
+
+.alumni:hover{
+  transition: ease-out ;
+  transform: scale(1.1);
+}
+
+.pastprojects:hover{
+  transition: ease-out ;
+  transform: scale(1.1);
+}
